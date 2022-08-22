@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 html,
 body {
     margin: 0;
@@ -32,9 +36,11 @@ body {
 .nav div.logo a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.9rem;
-}
+    font-size: 3rem;
+    /* font-family: 'Potta One', cursive; */
+    font-family: 'Faster One', cursive;
 
+}
 .nav div.logo a:hover {
     color: #ae6ef7;
 }
@@ -64,7 +70,8 @@ body {
     text-decoration: none;
     color: rgb(255, 255, 255);
     line-height: 65px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    font-family: 'Koulen', cursive;
 }
 
 
@@ -526,7 +533,6 @@ input:checked + .slide-container .nav label { display: block; }
 
 /*sobre mi*/
 
-
 #foto-sobremi{
     background-image: url(../assets/img/Sobremi.jpeg);
     border-radius: 2px;
@@ -575,7 +581,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 /*contacto */
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 #contact{
     margin-top: 0px;
@@ -758,28 +764,6 @@ color: #F2F3EB;
 /* footer */
 #footer{
     font-size: 18px;
-}
-
-
-/*Mapa home*/
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:0;
-    background-color: #111;
-    margin: 0px;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
 }
 
 /*Tienda*/
