@@ -6,123 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDdiseño</title>
     <link rel="icon" type="image" href="./assets/img/icon.png"> 
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- css -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <header>
-        <div class="header-titulo">
-            <img src="./assets/img/logo.png"  alt="logoSDdiseño">
-            <h1>SD Diseño</h1>
-            <h2>Diseño grafico y organizadora de eventos</h2>
+    <!-- nav bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">SD Diseño</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./pages/sobremi.html">Sobre mi</a></li>
+                    <li><a href="./pages/productos.html">Tienda</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Menu desplegable -->
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
-        <nav id='menu'>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/sobremi.html">Sobre mi</a></li>
-                <li><a href="./pages/productos.html">Tienda</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <main>
-        <section class="carousel-fotos">
-                <div class="carousel">
-                <ul class="slides">
-                <input type="radio" name="radio-buttons" id="img-1" checked />
-                <li class="slide-container">
-                    <div class="slide-image">
-                    <img src="./assets/img/img1.jpeg">
-                    </div>
-                    <div class="carousel-controls">
-                    <label for="img-3" class="prev-slide">
-                        <span>«</span>
-                    </label>
-                    <label for="img-2" class="next-slide">
-                        <span>»</span>
-                    </label>
-                    </div>
-                </li>
-                <input type="radio" name="radio-buttons" id="img-2" />
-                <li class="slide-container">
-                    <div class="slide-image">
-                    <img src="./assets/img/img2.jpeg">
-                    </div>
-                    <div class="carousel-controls">
-                    <label for="img-1" class="prev-slide">
-                        <span>«</span>
-                    </label>
-                    <label for="img-3" class="next-slide">
-                        <span>»</span>
-                    </label>
-                    </div>
-                </li>
-                <input type="radio" name="radio-buttons" id="img-3" />
-                <li class="slide-container">
-                    <div class="slide-image">
-                    <img src="./assets/img/img3.jpeg">
-                    </div>
-                    <div class="carousel-controls">
-                    <label for="img-2" class="prev-slide">
-                        <span>«</span>
-                    </label>
-                    <label for="img-1" class="next-slide">
-                        <span>»</span>
-                    </label>
-                    </div>
-                </li>
-                <div class="carousel-dots">
-                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+    <!-- Carousel -->
+    <section class="home">
+        <div class="carousel">
+            <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide-image">
+                <img src="./assets/img/img1.jpeg">
                 </div>
-                </ul>
-            </div>
-            </div>
-        </section>
-
-        <section class="productos-home">
-            <div class="row">
-                <div class="column">
-                    <a href="./pages/productos.html">
-                    <img alt="img1" src="./assets/img/productos-home (1).jpeg"/>
-                    <img alt="img2" src="./assets/img/productos-home (2).jpeg"/>
-                    <img alt="img3" src="./assets/img/productos-home (3).jpeg"/>
-                    <img alt="img4" src="./assets/img/productos-home (4).jpeg"/></a>
+                <div class="carousel-controls">
+                <label for="img-3" class="prev-slide">
+                    <span>«</span>
+                </label>
+                <label for="img-2" class="next-slide">
+                    <span>»</span>
+                </label>
                 </div>
-
-                <div class="column">
-                    <a href="./pages/productos.html">
-                    <img alt="img2" src="./assets/img/productos-home (5).jpeg"/>
-                    <img alt="img3" src="./assets/img/productos-home (6).jpeg"/>
-                    <img alt="img4" src="./assets/img/productos-home (7).jpeg"/>
-                    <img alt="img1" src="./assets/img/productos-home (8).jpeg"/></a>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+                <div class="slide-image">
+                <img src="./assets/img/img2.jpeg">
                 </div>
-
+                <div class="carousel-controls">
+                <label for="img-1" class="prev-slide">
+                    <span>«</span>
+                </label>
+                <label for="img-3" class="next-slide">
+                    <span>»</span>
+                </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+                <div class="slide-image">
+                <img src="./assets/img/img3.jpeg">
+                </div>
+                <div class="carousel-controls">
+                <label for="img-2" class="prev-slide">
+                    <span>«</span>
+                </label>
+                <label for="img-1" class="next-slide">
+                    <span>»</span>
+                </label>
+                </div>
+            </li>
+            <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
             </div>
-        </section>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="container-galeria">
+        <div class="titulo-galeria"><h2>Galeria de productos</h2></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (1).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (2).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (3).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (4).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (5).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (6).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (7).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/productos-home (8).jpeg"></div></a>
+            <div class="col-lg-4 col-md-6 col-sm-1 "><a href="./pages/productos.html"><img src="./assets/img/img2.jpeg"></div></a>
+        </div>
+    </section>
+
+    <section>
+        <!-- HACER MAPA -->
+    </section>
     </main>
-
-    <footer>
-		<div class="conteiner-footer">
-            <div class="nav footer-navizq">
-                <ul>
-                    <li><img src="./assets/img/whatsapp.png"><h3>+54 9 3489 568002</h3></li>
-                    <li><img src="./assets/img/outlook.png"><h3>sdd.creativo@gmail.com</h3></li>
-                </ul>
-            </div>
-			<nav class="nav footer-nav">
-				<ul>
-					<li><a href="https://www.instagram.com/sdcreativo/?theme=dark" target="_blank"> <img src="./assets/img/instagram.png"></a></li>
-                    <li><a href="https://www.facebook.com/sd.diseno.3" target="__blank"> <img src="./assets/img/facebook.png"></a></li>
-				</ul>
-			</nav>
-		</div>
-    </footer> 
-
+    
+    <!-- footer -->
+    <footer id="footer" class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <!-- Redes -->
+            <section class="mb-4">
+            <!-- WhatsApp -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+549348956-8002?text=¡Estoy+interesado!" target="__blank" role="button"><i class="bi bi-whatsapp"></i></a>
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/sd.diseno.3" target="__blank" role="button"><i class="bi bi-facebook"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sdcreativo/?theme=dark" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="./pages/sobremi.html">SD Diseño</a>
+        </div>
+    </footer>
+    
+<!-- scripts -->
+<!-- Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <!-- script de animacion -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
 </body>
 </html>
