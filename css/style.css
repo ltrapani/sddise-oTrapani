@@ -1,0 +1,62 @@
+/*galeria home*/
+#galeria {
+  background-color: #111;
+  padding-top: 70px;
+}
+#galeria img {
+  margin-top: 100px;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+}
+#galeria img:hover {
+  border: 4px solid #fdfbff;
+}
+#galeria .col-lg-4 {
+  padding: 25px;
+  margin: 0 !important;
+}
+
+/*sobre mi*/
+#foto-sobremi {
+  background-image: url(../assets/img/Sobremi.jpeg);
+  border-radius: 2px;
+  background-size: cover;
+  background-color: #111;
+}
+
+#titulo-sobremi {
+  text-align: center;
+  background-color: #111;
+  padding: 50px;
+  border-radius: 2px;
+}
+#titulo-sobremi h2 {
+  color: #fff;
+  font-size: 80px;
+}
+
+#texto-sobremi {
+  font-size: 40px;
+  text-align: center;
+  padding: 120px;
+  background-color: #111;
+}
+
+#footer-sobremi {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #111;
+}
+
+#section-sobremi {
+  padding-top: 100px;
+  background-color: black;
+  padding-right: 12px;
+  font-family: "Archivo Narrow", sans-serif;
+}
+#section-sobremi p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
