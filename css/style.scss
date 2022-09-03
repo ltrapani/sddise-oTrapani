@@ -54,12 +54,35 @@ body {
         padding-top: 110px;
         font-family: 'Passion One', cursive;
     }
+    h1{
+        font-size: 100px;
+        padding-top: 110px;
+        font-family: 'Passion One', cursive;
+        color: white;
+    }
+}
+
+.sobremi-bottom{
+    padding-bottom: 100px;
+    background-color: rgb(23, 23, 23);
+    overflow-x: hidden;
+    h2{
+        color: white;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-family: 'Passion One', cursive;
+        font-size: 65px;
+    }
 }
 
 @media screen and (max-width: 480px){
     .titulo-galeria{
         h2{
-            font-size: 76px;
+            font-size: 74px;
+        }
+        h1{
+            font-size: 74px;
+
         }
     }
 }
@@ -70,6 +93,12 @@ body {
     h2{
         font-size: 100px;
         font-family: 'Passion One', cursive;
+    }
+    h1{
+        color: #fff;
+        font-size: 80px;
+        font-family: "Koulen", cursive;
+        padding-top: 0px;
     }
 }
 
@@ -93,9 +122,11 @@ body {
 }
 
 /*sobre mi*/
+.row{
+    background-color: #111;
+}
 
-#foto-sobremi{
-    background-image: url(../assets/img/Sobremi.jpeg);
+#foto-sobremi img{
     border-radius: 2px;
     background-size: cover;
     background-color: #111;
@@ -108,9 +139,10 @@ body {
     padding: 50px;
     border-radius: 2px;
 
-    h2{
+    h1{
         color: #fff;
-        font-size: 80px;
+        font-size: 60px;
+        font-family: "Koulen", cursive;
     }
 }
 
@@ -140,6 +172,11 @@ body {
     }
 }
 
+.sobremi-bottom{
+    h3{
+        color: white;
+    }
+}
 /* footer */
 #footer{
     font-size: 18px;
@@ -149,9 +186,7 @@ body {
 
 /*Tienda*/
 
-.card-text{
-    font-size: 17px;
-}
+
 
 #gallery-background{
     background-color: black;
@@ -164,6 +199,10 @@ body {
     height: 600px;
 }
 
+h3{
+    text-transform: uppercase;
+    font-family: "Koulen", cursive;
+}
 
 
 
@@ -205,6 +244,17 @@ textarea {
 	overflow: auto;
 }
 
+h1 {
+        color: #474544;
+        font-size: 37px;
+        font-weight: 700;
+        letter-spacing: 7px;
+        padding-top: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+    
 #container {
 	border: solid 3px #474544;
 	margin: 60px auto;
@@ -214,19 +264,11 @@ textarea {
 
 form {
 	padding: 37.5px;
-	margin: 50px 0;
+	margin: 50px 0 0 0;
+    
 }
 
-h1 {
-	color: #474544;
-	font-size: 37px;
-	font-weight: 700;
-	letter-spacing: 7px;
-    padding-top: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Montserrat', Arial, sans-serif;
-}
+
 
 .underline {
 	border-bottom: solid 4px #474544;
@@ -656,7 +698,7 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 
 .container-carousel{
     padding-top: 100px; 
-    
+    width: 100%;
 }
 
 

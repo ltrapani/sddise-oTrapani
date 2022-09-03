@@ -50,10 +50,32 @@ body {
   padding-top: 110px;
   font-family: "Passion One", cursive;
 }
+.titulo-galeria h1 {
+  font-size: 100px;
+  padding-top: 110px;
+  font-family: "Passion One", cursive;
+  color: white;
+}
+
+.sobremi-bottom {
+  padding-bottom: 100px;
+  background-color: rgb(23, 23, 23);
+  overflow-x: hidden;
+}
+.sobremi-bottom h2 {
+  color: white;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-family: "Passion One", cursive;
+  font-size: 65px;
+}
 
 @media screen and (max-width: 480px) {
   .titulo-galeria h2 {
-    font-size: 76px;
+    font-size: 74px;
+  }
+  .titulo-galeria h1 {
+    font-size: 74px;
   }
 }
 .titulo-galeria2 {
@@ -63,6 +85,12 @@ body {
 .titulo-galeria2 h2 {
   font-size: 100px;
   font-family: "Passion One", cursive;
+}
+.titulo-galeria2 h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: "Koulen", cursive;
+  padding-top: 0px;
 }
 
 /* Home  */
@@ -83,8 +111,11 @@ body {
 }
 
 /*sobre mi*/
-#foto-sobremi {
-  background-image: url(../assets/img/Sobremi.jpeg);
+.row {
+  background-color: #111;
+}
+
+#foto-sobremi img {
   border-radius: 2px;
   background-size: cover;
   background-color: #111;
@@ -96,9 +127,10 @@ body {
   padding: 50px;
   border-radius: 2px;
 }
-#titulo-sobremi h2 {
+#titulo-sobremi h1 {
   color: #fff;
-  font-size: 80px;
+  font-size: 60px;
+  font-family: "Koulen", cursive;
 }
 
 #texto-sobremi {
@@ -126,6 +158,10 @@ body {
   color: #fff;
 }
 
+.sobremi-bottom h3 {
+  color: white;
+}
+
 /* footer */
 #footer {
   font-size: 18px;
@@ -134,10 +170,6 @@ body {
 }
 
 /*Tienda*/
-.card-text {
-  font-size: 17px;
-}
-
 #gallery-background {
   background-color: black;
   padding-top: 100px;
@@ -147,6 +179,11 @@ body {
   margin-top: 100px;
   margin-right: 20px;
   height: 600px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Koulen", cursive;
 }
 
 /*contacto */
@@ -183,17 +220,6 @@ textarea {
   overflow: auto;
 }
 
-#container {
-  border: solid 3px #474544;
-  margin: 60px auto;
-  position: relative;
-}
-
-form {
-  padding: 37.5px;
-  margin: 50px 0;
-}
-
 h1 {
   color: #474544;
   font-size: 37px;
@@ -203,6 +229,17 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", Arial, sans-serif;
+}
+
+#container {
+  border: solid 3px #474544;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0 0 0;
 }
 
 .underline {
@@ -607,4 +644,5 @@ input[type=text]:focus, [type=email]:focus, textarea:focus {
 
 .container-carousel {
   padding-top: 100px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
