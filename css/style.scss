@@ -7,8 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
+/*variables*/
 $negro: #111;
 $img-hover: #fdfbff;
+
+@mixin titulo ($color, $tamaño){
+    color: $color;
+    font-size: $tamaño;
+    font-family: 'Passion One', cursive;
+    padding-top: 0px;
+}
+
+
 html,
 body {
     margin: 0;
@@ -62,9 +72,14 @@ body {
     }
 }
 
+hr{
+    color: white;
+    width: 100%;
+}
+
 .sobremi-bottom{
     padding-bottom: 100px;
-    background-color: rgb(23, 23, 23);
+    background-color: #111;
     overflow-x: hidden;
     h2{
         color: white;
@@ -82,28 +97,21 @@ body {
         }
         h1{
             font-size: 74px;
-
         }
     }
 }
 
 .titulo-galeria2{
     text-align: center;
-    color: white;
     h2{
-        font-size: 100px;
-        font-family: 'Passion One', cursive;
+        @include titulo(white, 100px)
     }
     h1{
-        color: #fff;
-        font-size: 80px;
-        font-family: "Koulen", cursive;
-        padding-top: 0px;
+        @include titulo(white, 80px)
     }
 }
 
 /* Home  */
-
 .home {
     width: 100%;
 	background-size:cover;  
@@ -126,13 +134,6 @@ body {
     background-color: #111;
 }
 
-#foto-sobremi img{
-    border-radius: 2px;
-    background-size: cover;
-    background-color: #111;
-}
-
-
 #titulo-sobremi{
     text-align: center;
     background-color:#111;
@@ -143,13 +144,24 @@ body {
         color: #fff;
         font-size: 60px;
         font-family: "Koulen", cursive;
+        margin: 0px;
+    }
+
+    img{
+        width: 200px;
+        float: left;
+        margin-left: 200px;
+        margin-right: 0px;
     }
 }
 
+.text-light{
+    padding-bottom: 40px;
+}
 #texto-sobremi{
     font-size: 40px;
-    text-align: center;
-    padding: 120px;
+    text-align: justify;
+    padding: 30px 100px;
     background-color: #111;
 }
 
