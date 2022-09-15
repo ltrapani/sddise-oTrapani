@@ -182,6 +182,48 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="row">
+                <div class="faq-wrapper">
+                    <div class="header">
+                    </div>
+                    <div class="faq-inner">
+                    <div class="faq-item">
+                        <h4>
+                        Metodos de pago
+                        <span class="faq-plus">&plus;</span>
+                        </h4>
+                        <div class="faq-body">
+                            <p>Se acepta Mercado Pago, Efectivo y Trasnferencia Bancaria. En todos los casos, se requerirá pagar el 50% como seña, y el otro 50% al ser entregado el producto.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h4>
+                        Reclamos
+                        <span class="faq-plus">&plus;</span>
+                        </h4>
+                        <div class="faq-body">
+                            <p>En caso de tener un reclamo, puede rellenar el formulario que se encuentra el el apartado de "contacto" para poder comunicarse con nosotros.</p> 
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="faq-item">
+                        <h4>
+                        Envios
+                        <span class="faq-plus">&plus;</span>
+                        </h4>
+                        <div class="faq-body">
+                            <p>El pedido puede ser retirado en la sucursal, o se puede abonar un envio de entre $100 a $250 (pesos arg) dependiendo de la zona.</p>  
+                        </div>
+                    </div>
+                    <hr>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
@@ -215,6 +257,13 @@
     <script>
         AOS.init();
     </script>
+
+    <script>
+        $(".faq-plus").on('click',function(){
+            $(this).parent().parent().find('.faq-body').slideToggle();
+        });
+    </script>
+
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 1) {
