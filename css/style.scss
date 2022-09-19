@@ -144,10 +144,12 @@ hr{
     }
 
     img{
-        width: 200px;
+        width: 250px;
         float: left;
         margin-left: 200px;
         margin-right: 0px;
+        border-style: solid;
+        border-radius: 999px;
     }
 }
 

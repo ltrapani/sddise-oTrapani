@@ -131,10 +131,12 @@ hr {
   padding-right: 100px;
 }
 #titulo-sobremi img {
-  width: 200px;
+  width: 250px;
   float: left;
   margin-left: 200px;
   margin-right: 0px;
+  border-style: solid;
+  border-radius: 999px;
 }
 
 .text-light {
